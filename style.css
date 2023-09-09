@@ -1,14 +1,13 @@
 body {
-    font: Open Sans, Arial;
+    font-family: Open Sans, Arial;
     color: #454545;
     font-size: 16px;
     margin: 2em auto;
     max-width: 800px;
     padding: 1em;
-    line-height: 1.4;
-    text-align: justify
+    line-height: 1.4
 }
 
 a:link { color: #0077aa }
 
-a:visited { color: #80 }
+a:visited { color: #800000 }
