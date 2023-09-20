@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-09-20 Wed 12:56 -->
+<!-- 2023-09-20 Wed 12:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>7В класс</title>
+<title>Арифметические выражения, 7В класс</title>
 <meta name="author" content="Danil Braun" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -229,145 +229,185 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">7В класс</h1>
-
-<div id="outline-container-orge7b9a7d" class="outline-2">
-<h2 id="orge7b9a7d">Занятия</h2>
-<div class="outline-text-2" id="text-orge7b9a7d">
-</div>
-<div id="outline-container-org8e1f8e1" class="outline-3">
-<h3 id="org8e1f8e1">20 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-org8e1f8e1">
+<h1 class="title">Арифметические выражения, 7В класс</h1>
 <p>
-<a href="./coes-7v.html">Арифметические выражения. Круги вычислений.</a>
+Находим себя в списке, смотрим, какие выражения нужно
+сделать. Скобки в выражениях не расставлены, Вам это нужно сделать
+самим! (Cначала умножение и деление, потом сложение и вычитание; слева
+направо.) Для каждого выражения Вам сначала нужно нарисовать Круг
+Вычисления, а затем соответствующий ему код; получившийся код
+выполняем в интерактивном окне на
+<a href="https://wescheme.org">wescheme.org</a>. Пример:
+</p>
+
+
+<div id="org55f3771" class="figure">
+<p><img src="https://danilbraun.org/teaching/kelechek/2324/files/coe-practice.png" alt="coe-practice.png" />
 </p>
 </div>
-</div>
 
-<div id="outline-container-org79b0dcb" class="outline-3">
-<h3 id="org79b0dcb">13 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-org79b0dcb">
 <p>
-Примеры функций для создания изображений:
+Сначала делаем всё на тройку, если сделали верно, делаем на четвёрку,
+а потом так же на пятёрку. Нельзя на пять сделать только одно
+выражение на пятёрку.
 </p>
 
 <ul class="org-ul">
-<li><code>(circle 100 "solid" "green")</code></li>
-<li><code>(rectangle 200 100 "solid" "pink")</code></li>
-<li><code>(square 100 "solid" "red")</code></li>
-<li><code>(star 100 "outline" "black")</code></li>
-</ul>
-
-
-<p>
-Примеры функций для изменения/комбинирования изображений (<code>IMG1</code> и
-<code>IMG2</code> это какие-то изображения, например, <code>(star 50 "solid" "blue")</code>
-и <code>(square 20 "outline" "yellow"</code>; <code>N</code> &#x2014; какое-то число):
-</p>
-
+<li>А. Амина
 <ul class="org-ul">
-<li><code>(above IMG1 IMG2)</code></li>
-<li><code>(beside IMG1 IMG2)</code></li>
-<li><code>(overlay IMG1 IMG2)</code></li>
-<li><code>(rotate N IMG1)</code></li>
-</ul>
-
-
-<p>
-Задачи.
-</p>
-
-<ol class="org-ol">
-<li>Напишите программу, рисующую флаг
+<li>На 3:
 <ul class="org-ul">
-<li>Армении</li>
-<li>Мадагаскара</li>
-<li>Буркина Фасо</li>
-<li>Чешской Республики</li>
+<li>\(3 + -10\)</li>
+<li>\(1 \div 25\)</li>
 </ul></li>
-</ol>
-</div>
-</div>
-
-
-<div id="outline-container-org4e354e0" class="outline-3">
-<h3 id="org4e354e0">11 сентября 2023, понедельник</h3>
-<div class="outline-text-3" id="text-org4e354e0">
+<li>На 4: \(-3 \div 2 \div -5\)</li>
+<li>На 5: \(-9 + 8 \div 18 \times 30 - 19\)</li>
+</ul></li>
+<li>Б. Кунтоо
 <ul class="org-ul">
-<li>Правила построения Кругов Вычислений:
-<ol class="org-ol">
-<li>Каждый круг содержит одну &#x2014; и только одну! &#x2014; операцию;</li>
-<li>В середину круга вписываются числа (или другие объекты, о которых
-узнаем позже) слева направо;</li>
-<li>Круги могут содержать другие круги.</li>
-</ol></li>
-<li>Правила написания кода для арифметического выражения. Выражение
-\(3 + 7\) мы записываем в программе как <code>(+ 3 7)</code>.
-<ol class="org-ol">
-<li>Выражение всегда начинается и заканчивается круглой скобкой
-(открывающей и закрывающей соответственно).</li>
-<li>Сразу после открывающей скобки пишется имя операции. Это может
-быть значок, слово или набор слов: <code>+</code>, <code>/</code>, <code>sqr</code>,
-<code>string-length</code>. Между открывающей скобкой и именем пробел не ставится!</li>
-<li>После имени ставится пробел и далее через пробел слева направо
-перечисляются <b>аргументы</b> &#x2014; числа, к которым мы применяем
-операцию.</li>
-<li>После последнего аргумента ставится закрывающая скобка. Между
-ними пробел также не ставится.</li>
-</ol></li>
-<li>Среда разработки: <a href="https://wescheme.org">https://wescheme.org</a></li>
-</ul>
-
-
-<p>
-Пример:
-</p>
-
-
-<div id="orgb013c1a" class="figure">
-<p><img src="./files/coe-example.png" alt="coe-example.png" />
-</p>
-</div>
-
-<p>
-Для тренировки (заполните круги до конца и напишите код, который также
-можно проверить на WeScheme):
-</p>
-
-
-<div id="org31a4d89" class="figure">
-<p><img src="./files/coe-practice.png" alt="coe-practice.png" />
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org39e6a36" class="outline-3">
-<h3 id="org39e6a36">6 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-org39e6a36">
+<li>На 3:
 <ul class="org-ul">
-<li>Картинка 1: <a href="./files/dog-ruler.png">.png</a></li>
-<li>Картинка 2: <a href="./files/estim-coords.png">.png</a></li>
-<li><a href="https://www.desmos.com/calculator/pbm9nxr2rd">Ninja Cat Desmos Graph</a></li>
-<li>Описание, скетч</li>
-<li><a href="https://docs.google.com/drawings/d/1xXNWcbJ7KOgTClFQeHq-tIy0xmeZds9N3OktvEBaO4c/copy">Template</a></li>
+<li>\(28 + 10\)</li>
+<li>\(2 \times -9\)</li>
+</ul></li>
+<li>На 4: \(7 \div 7 + 11\)</li>
+<li>На 5: \(-8 \div 1 \times 19 \times 7 \div -1\)</li>
+</ul></li>
+<li>Г. Абдуалим
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(-8 - 26\)</li>
+<li>\(-5 \times 12\)</li>
+</ul></li>
+<li>На 4: \(10 \times -6 - 28\)</li>
+<li>На 5: \(-10 + 2 \times 29 \div 9 \div -8\)</li>
+</ul></li>
+<li>Д. Илим
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(30 + 30\)</li>
+<li>\(25 \div 23\)</li>
+</ul></li>
+<li>На 4: \(14 \times -6 + -4\)</li>
+<li>На 5: \(25 \div 3 \times -3 + -2 \div 30\)</li>
+</ul></li>
+<li>Ж. Алия
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(23 + 10\)</li>
+<li>\(23 \times 25\)</li>
+</ul></li>
+<li>На 4: \(19 + -10 \div -9\)</li>
+<li>На 5: \(9 - -9 - 2 - -6 - 8\)</li>
+</ul></li>
+<li>Ж. Арууке
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(25 - 30\)</li>
+<li>\(-9 \times 8\)</li>
+</ul></li>
+<li>На 4: \(29 \div 17 \times 13\)</li>
+<li>На 5: \(10 + 27 + 18 \div 19 - -1\)</li>
+</ul></li>
+<li>И. Эрлан
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(-8 + 2\)</li>
+<li>\(-1 \times 29\)</li>
+</ul></li>
+<li>На 4: \(19 \div 23 \div 7\)</li>
+<li>На 5: \(-10 \times -8 \times 2 \div -4 - 6\)</li>
+</ul></li>
+<li>М. Айнель
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(3 + -7\)</li>
+<li>\(-3 \times 3\)</li>
+</ul></li>
+<li>На 4: \(3 \div 27 + 24\)</li>
+<li>На 5: \(15 - 11 - 19 - 22 + -3\)</li>
+</ul></li>
+<li>М. Сезим
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(2 - -9\)</li>
+<li>\(25 \div 18\)</li>
+</ul></li>
+<li>На 4: \(0 \div 30 - 25\)</li>
+<li>На 5: \(21 \times 9 + 22 \div -3 \div 15\)</li>
+</ul></li>
+<li>П. Виктория
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(5 - -8\)</li>
+<li>\(15 \times 24\)</li>
+</ul></li>
+<li>На 4: \(-1 + 26 - -10\)</li>
+<li>На 5: \(29 \div 12 - 7 + 16 \div -9\)</li>
+</ul></li>
+<li>Т. Нурадин
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(3 + -10\)</li>
+<li>\(2 \div 10\)</li>
+</ul></li>
+<li>На 4: \(16 \div -3 \div 22\)</li>
+<li>На 5: \(-6 \div 12 \div -3 \div 7 \div 20\)</li>
+</ul></li>
+<li>Т. Эллара
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(17 - -2\)</li>
+<li>\(4 \times 17\)</li>
+</ul></li>
+<li>На 4: \(-4 \times -1 \div -8\)</li>
+<li>На 5: \(24 + -3 \times 6 \times 21 \times 8\)</li>
+</ul></li>
+<li>Т. Баатыр
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(-4 - 7\)</li>
+<li>\(6 \div 24\)</li>
+</ul></li>
+<li>На 4: \(20 + -3 - 27\)</li>
+<li>На 5: \(26 \times 9 + 13 \times 18 + 14\)</li>
+</ul></li>
+<li>Т. Канышай
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(27 - 1\)</li>
+<li>\(-8 \div -4\)</li>
+</ul></li>
+<li>На 4: \(3 \times -1 + 23\)</li>
+<li>На 5: \(-2 + -1 \times -8 \times 7 - 26\)</li>
+</ul></li>
+<li>Х. Сафия
+<ul class="org-ul">
+<li>На 3:
+<ul class="org-ul">
+<li>\(20 + -10\)</li>
+<li>\(4 \div 10\)</li>
+</ul></li>
+<li>На 4: \(21 + 13 \times -6\)</li>
+<li>На 5: \(20 \div -5 + 15 + 18 + -8\)</li>
+</ul></li>
 </ul>
-</div>
-</div>
-
-<div id="outline-container-org6d48874" class="outline-3">
-<h3 id="org6d48874">4 сентября 2023, понедельник</h3>
-<div class="outline-text-3" id="text-org6d48874">
-<p>
-Игра Ninja Cat: <a href="https://www.wescheme.org/run?publicId=sggzRzgU5T">https://www.wescheme.org/run?publicId=sggzRzgU5T</a>
-</p>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-09-20 Wed 12:56</p>
+<p class="date">Created: 2023-09-20 Wed 12:58</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
