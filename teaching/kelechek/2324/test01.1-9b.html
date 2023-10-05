@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-05 Thu 10:49 -->
+<!-- 2023-10-05 Thu 10:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>9Б класс</title>
+<title>Тест #1.1, 9Б</title>
 <meta name="author" content="Danil Braun" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -197,59 +197,107 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">9Б класс</h1>
-
-<div id="outline-container-orgf5b4fa1" class="outline-2">
-<h2 id="orgf5b4fa1">Занятия</h2>
-<div class="outline-text-2" id="text-orgf5b4fa1">
-</div>
-<div id="outline-container-orga8b7025" class="outline-3">
-<h3 id="orga8b7025">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orga8b7025">
-<p>
-<a href="./test01.1-9b.html">Тест #1.1</a>
+<h1 class="title">Тест #1.1, 9Б</h1>
+<ol class="org-ol">
+<li>Напишите свои имя и фамилию.</li>
+<li>Из нижеперечисленного выберите (напишите номера по порядку) только <b>значения</b>:
+<ol class="org-ol">
+<li><code>3 + 4</code></li>
+<li><code>71.2</code></li>
+<li><code>10/2</code></li>
+<li><code>"solid"</code></li>
+<li><code>circle(100, "outline", "white")</code></li>
+<li><code>a = 10</code></li>
+<li><code>49 / 7</code></li>
+<li><code>"red"</code></li>
+</ol></li>
+<li><p>
+В левом окне написали нижеследующий код и нажали кнопку Run.
 </p>
-</div>
-</div>
-
-<div id="outline-container-org3a4fa24" class="outline-3">
-<h3 id="org3a4fa24">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org3a4fa24">
+<pre class="example">
+a = 12
+b = a / 4
+</pre>
 <p>
-<a href="./flags-9b.html">Флаги</a>
+Что Вам выдаст в ответ Pyret, если в правом окне Вы выполните
+(напишите и нажмёте Enter):
 </p>
-</div>
-</div>
-
-<div id="outline-container-org6ee82e3" class="outline-3">
-<h3 id="org6ee82e3">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org6ee82e3">
-<ul class="org-ul">
-<li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
-<ul class="org-ul">
-<li>Про числа: <a href="https://pyret.org/docs/latest/numbers.html">https://pyret.org/docs/latest/numbers.html</a></li>
-<li>Про строки: <a href="https://pyret.org/docs/latest/strings.html">https://pyret.org/docs/latest/strings.html</a></li>
-<li>Про изображения: <a href="https://pyret.org/docs/latest/image.html">https://pyret.org/docs/latest/image.html</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7f45e33" class="outline-3">
-<h3 id="org7f45e33">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org7f45e33">
-<ul class="org-ul">
-<li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
-<li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
-<li>Среда разработки: <a href="https://code.pyret.org/">code.pyret.org</a></li>
-</ul>
-</div>
-</div>
-</div>
+<ol class="org-ol">
+<li><code>a</code></li>
+<li><code>b</code></li>
+<li><code>c</code></li>
+<li><code>a + b</code></li>
+<li><code>a = 10</code></li>
+<li><code>c = a + b</code></li>
+</ol></li>
+<li><p>
+В левом окне написали нижеследующий код и нажали кнопку Run.
+</p>
+<pre class="example">
+bigger-sqr = square(120, "solid", "green")
+smaller-sqr = square(60, "solid", "blue")
+?
+</pre>
+<p>
+Напишите, что нужно вписать вместо <code>?</code> в третьей строке (используя
+<code>bigger-sqr</code> и <code>smaller-sqr</code>), чтобы получилась такая картинка: <img src="https://i.imgur.com/aeF7VdC.png" alt="aeF7VdC.png" />
+</p></li>
+<li>Напишите, что такое:
+<ol class="org-ol">
+<li>выражение;</li>
+<li>значение;</li>
+<li>тип;</li>
+<li>контракт.</li>
+</ol></li>
+<li><p>
+Дан контракт функции <code>rotate</code>:
+</p>
+<pre class="example">
+rotate :: (
+  angle :: Number, 
+  img :: Image
+) -&gt; Image
+</pre>
+<p>
+Что можно передать функции <code>rotate</code> в качестве первого аргумента,
+судя по контракту? Перечислите (по номерам) все правильные ответы:
+</p>
+<ol class="org-ol">
+<li><code>42</code></li>
+<li><code>"90 degrees"</code></li>
+<li><code>-120</code></li>
+<li><code>square(30, "solid", "blue")</code></li>
+<li><code>"45"</code></li>
+<li><code>330</code></li>
+<li><code>circle(100, "outline", "green")</code></li>
+</ol></li>
+<li><p>
+Дан контракт функции <code>fffunc</code>:
+</p>
+<pre class="example">
+fffunc :: (
+  x :: Number,
+  y :: String,
+  z :: Number
+) -&gt; Image
+</pre>
+<p>
+Выпишите (по номерам) все примеры использования <code>fffunc</code>,
+которые не нарушают контракт:
+</p>
+<ol class="org-ol">
+<li><code>fffunc(100, 200, "qwe")</code></li>
+<li><code>fffunc(12, "solid", 30)</code></li>
+<li><code>fffunc("qwe", 60, "asd")</code></li>
+<li><code>fffunc("zxc", 12, 34)</code></li>
+<li><code>fffunc(45, "vbn", 67)</code></li>
+<li><code>fffunc("tyu", "iop", 90)</code></li>
+</ol></li>
+</ol>
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-05 Thu 10:49</p>
+<p class="date">Created: 2023-10-05 Thu 10:52</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
