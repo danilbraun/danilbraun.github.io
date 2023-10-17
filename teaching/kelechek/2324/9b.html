@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-05 Thu 13:47 -->
+<!-- 2023-10-17 Tue 10:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>9Б класс</title>
@@ -194,18 +194,107 @@
   .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">9Б класс</h1>
 
-<div id="outline-container-orga30fc75" class="outline-2">
-<h2 id="orga30fc75">Занятия</h2>
-<div class="outline-text-2" id="text-orga30fc75">
+<div id="outline-container-org786332e" class="outline-2">
+<h2 id="org786332e">Занятия</h2>
+<div class="outline-text-2" id="text-org786332e">
 </div>
-<div id="outline-container-orgbe47ef4" class="outline-3">
-<h3 id="orgbe47ef4">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgbe47ef4">
+<div id="outline-container-org1270142" class="outline-3">
+<h3 id="org1270142">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org1270142">
+<p>
+<b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
+принимает 6 чисел (баллы за 6 заданий теста) и
+возвращает число от 0 до 1 &#x2014; процент выполнения
+всего теста. Пример использования функции:
+</p>
+
+<pre class="example">
+&gt;&gt;&gt; grade-v1(1/3, 1, 1, 1/2, 5/9, 0)
+0.56481
+</pre>
+
+<p>
+<b>Задача 2.</b> Определить функцию <code>grade-v2</code>, которая
+принимает 6 чисел (баллы за 6 заданий теста) и
+возвращает оценку за тест (2, 3, 4 или 5) на основании
+такого распределения:
+</p>
+
+<ul class="org-ul">
+<li>\(2\) это \([0; 0.5]\)</li>
+<li>\(3\) это \((0.5; 0.7]\)</li>
+<li>\(4\) это \((0.7 ; 0.9]\)</li>
+<li>\(5\) это \((0.9 ; 1]\)</li>
+</ul>
+
+
+<p>
+Пример использования:
+</p>
+
+<pre class="example">
+&gt;&gt;&gt; grade-v2(1, 0, 0, 0, 1/2, 1)
+2
+&gt;&gt;&gt; grade-v2(1, 3/4, 7/9, 1/2, 1/2, 1)
+4
+</pre>
+
+
+<p>
+<b>Задача 3.</b> Определить функцию <code>grade-v3</code>, которая принимает 6 чисел
+(баллы за 6 заданий теста) и возвращает оценку за тест (<i>необязательно целое</i>
+число из интервала \([2 ; 5]\)). Пример использования:
+</p>
+
+<pre class="example">
+&gt;&gt;&gt; grade-v2(1, 0, 0, 0, 1/2, 1)
+2.83
+&gt;&gt;&gt; grade-v2(1, 3/4, 7/9, 1/2, 1/2, 1)
+4.27
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org904bcef" class="outline-3">
+<h3 id="org904bcef">5 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org904bcef">
 <ul class="org-ul">
 <li><a href="./test01.1-9b.html">Тест #1.1</a></li>
 <li>Учебник (на русском) <a href="https://danilbraun.org/files/dcic.pdf">Введение в программирование и структуры данных</a></li>
@@ -213,18 +302,18 @@
 </div>
 </div>
 
-<div id="outline-container-orgb499e19" class="outline-3">
-<h3 id="orgb499e19">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgb499e19">
+<div id="outline-container-org817063f" class="outline-3">
+<h3 id="org817063f">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org817063f">
 <p>
 <a href="./flags-9b.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1081837" class="outline-3">
-<h3 id="org1081837">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org1081837">
+<div id="outline-container-org61ac990" class="outline-3">
+<h3 id="org61ac990">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org61ac990">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -236,9 +325,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgaa1d818" class="outline-3">
-<h3 id="orgaa1d818">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgaa1d818">
+<div id="outline-container-orgdd95004" class="outline-3">
+<h3 id="orgdd95004">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgdd95004">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -250,7 +339,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-05 Thu 13:47</p>
+<p class="date">Created: 2023-10-17 Tue 10:54</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
