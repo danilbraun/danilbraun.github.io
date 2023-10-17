@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-17 Tue 09:22 -->
+<!-- 2023-10-17 Tue 09:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>11А класс</title>
@@ -194,14 +194,46 @@
   .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">11А класс</h1>
 
-<div id="outline-container-org31ac292" class="outline-2">
-<h2 id="org31ac292">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-org31ac292">
+<div id="outline-container-org8bb4ef9" class="outline-2">
+<h2 id="org8bb4ef9">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-org8bb4ef9">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -211,13 +243,13 @@
 </div>
 </div>
 
-<div id="outline-container-orgb972215" class="outline-2">
-<h2 id="orgb972215">Занятия</h2>
-<div class="outline-text-2" id="text-orgb972215">
+<div id="outline-container-orgdaaa712" class="outline-2">
+<h2 id="orgdaaa712">Занятия</h2>
+<div class="outline-text-2" id="text-orgdaaa712">
 </div>
-<div id="outline-container-org6ce9726" class="outline-3">
-<h3 id="org6ce9726">17 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org6ce9726">
+<div id="outline-container-orgf6c84e3" class="outline-3">
+<h3 id="orgf6c84e3">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgf6c84e3">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -229,30 +261,45 @@
 &gt;&gt;&gt; grade-v1(1/3, 1, 1, 1/2, 5/9, 0)
 0.56481
 </pre>
+
+<p>
+<b>Задача 2.</b> Определить функцию <code>grade-v2</code>, которая
+принимает 6 чисел (баллы за 6 заданий теста) и
+возвращает оценку за тест (2, 3, 4 или 5) на основании
+такого распределения:
+</p>
+
+<ul class="org-ul">
+<li>\(2\) это \([0; 0.5]\)</li>
+<li>\(3\) это \((0.5; 0.7]\)</li>
+<li>\(4\) это \((0.7 ; 0.9]\)</li>
+<li>\(5\) это \((0.9 ; 1]\)</li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org38e2d03" class="outline-3">
-<h3 id="org38e2d03">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org38e2d03">
+
+<div id="outline-container-org85e13ba" class="outline-3">
+<h3 id="org85e13ba">5 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org85e13ba">
 <p>
 <a href="./test01.1-11a.html">Тест #1.1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb61466b" class="outline-3">
-<h3 id="orgb61466b">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgb61466b">
+<div id="outline-container-orgea3968a" class="outline-3">
+<h3 id="orgea3968a">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgea3968a">
 <p>
 <a href="./flags-11a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5543a0e" class="outline-3">
-<h3 id="org5543a0e">14 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org5543a0e">
+<div id="outline-container-org35931b6" class="outline-3">
+<h3 id="org35931b6">14 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org35931b6">
 <p>
 <b>Задание 1.</b> Написать программу, которая рисует флаг
 </p>
@@ -299,9 +346,9 @@
 </div>
 </div>
 
-<div id="outline-container-org12c7d79" class="outline-3">
-<h3 id="org12c7d79">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org12c7d79">
+<div id="outline-container-org04933ca" class="outline-3">
+<h3 id="org04933ca">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org04933ca">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -313,9 +360,9 @@
 </div>
 </div>
 
-<div id="outline-container-orga17a02b" class="outline-3">
-<h3 id="orga17a02b">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orga17a02b">
+<div id="outline-container-org3d7deb9" class="outline-3">
+<h3 id="org3d7deb9">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org3d7deb9">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -328,7 +375,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-17 Tue 09:22</p>
+<p class="date">Created: 2023-10-17 Tue 09:50</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
