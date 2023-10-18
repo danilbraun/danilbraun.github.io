@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-17 Tue 13:33 -->
+<!-- 2023-10-18 Wed 12:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>10А класс</title>
@@ -231,9 +231,9 @@
 <div id="content" class="content">
 <h1 class="title">10А класс</h1>
 
-<div id="outline-container-org3290e38" class="outline-2">
-<h2 id="org3290e38">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-org3290e38">
+<div id="outline-container-org57ca58c" class="outline-2">
+<h2 id="org57ca58c">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-org57ca58c">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -243,13 +243,48 @@
 </div>
 </div>
 
-<div id="outline-container-org68327ce" class="outline-2">
-<h2 id="org68327ce">Занятия</h2>
-<div class="outline-text-2" id="text-org68327ce">
+<div id="outline-container-org6c129d8" class="outline-2">
+<h2 id="org6c129d8">Занятия</h2>
+<div class="outline-text-2" id="text-org6c129d8">
 </div>
-<div id="outline-container-org99b64d5" class="outline-3">
-<h3 id="org99b64d5">17 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org99b64d5">
+<div id="outline-container-org128c34b" class="outline-3">
+<h3 id="org128c34b">18 октября 2023, среда</h3>
+<div class="outline-text-3" id="text-org128c34b">
+<p>
+Предположим, что у нас есть два разных способа мерять температуру, и
+есть для этого два разных градусника, назовём их А и Б. Сможете ли вы
+определить, при какой реальной температуре на обоих градусниках будет
+одно и то же число градусов, зная лишь два числа: (1) С &#x2014; точка на
+градуснике (кол-во градусов) Б, когда на градуснике А 0 градусов; (2)
+Т &#x2014; число градусов на градуснике Б, которое соответствует одному
+градусу на градуснике А.
+</p>
+
+<p>
+Нужно написать функцию, которая принимает эти два числа С и Т, и
+возвращает либо температуру (число, сколько градусов), при которой
+отметки на обоих градусниках совпадут, либо строку "больше одного",
+если таких температур несколько, либо "нет", если такой температуры не
+существует.
+</p>
+
+<p>
+Примеры. Пусть ваша функция называется f, тогда имеем:
+</p>
+
+<p>
+f(32, 2) должно вернуть -32
+</p>
+
+<p>
+f(1, 3) должно вернуть -0.5
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b8117f" class="outline-3">
+<h3 id="org7b8117f">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org7b8117f">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -294,32 +329,40 @@
 (баллы за 6 заданий теста) и возвращает оценку за тест (<i>необязательно целое</i>
 число из интервала \([2 ; 5]\)). Пример использования:
 </p>
+
+
+
+<pre class="example">
+&gt;&gt;&gt; grade-v3(1, 1/2, 0, 0, 0, 0)
+2.5
+&gt;&gt;&gt; grade-v3(1, 3/4, 7/9, 1/2, 1/2, 1)
+4.27
+</pre>
 </div>
 </div>
 
 
-
-<div id="outline-container-org35f4c2a" class="outline-3">
-<h3 id="org35f4c2a">3 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org35f4c2a">
+<div id="outline-container-org3410ee8" class="outline-3">
+<h3 id="org3410ee8">3 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org3410ee8">
 <p>
 <a href="./test01-10a.html">Тест #1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgbee64b5" class="outline-3">
-<h3 id="orgbee64b5">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgbee64b5">
+<div id="outline-container-orgcd24c45" class="outline-3">
+<h3 id="orgcd24c45">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgcd24c45">
 <p>
 <a href="./flags-10a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org166bcc6" class="outline-3">
-<h3 id="org166bcc6">13 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-org166bcc6">
+<div id="outline-container-orgcba90b5" class="outline-3">
+<h3 id="orgcba90b5">13 сентября 2023, среда</h3>
+<div class="outline-text-3" id="text-orgcba90b5">
 <p>
 Для решения задания на "5" нужно уметь пользоваться (знать контракт, и
 что функция делает) следующими функциями:
@@ -355,9 +398,9 @@
 </div>
 
 
-<div id="outline-container-org58b4d34" class="outline-3">
-<h3 id="org58b4d34">6 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-org58b4d34">
+<div id="outline-container-org13308f4" class="outline-3">
+<h3 id="org13308f4">6 сентября 2023, среда</h3>
+<div class="outline-text-3" id="text-org13308f4">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -369,9 +412,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgd055b8e" class="outline-3">
-<h3 id="orgd055b8e">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgd055b8e">
+<div id="outline-container-org146ccbc" class="outline-3">
+<h3 id="org146ccbc">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org146ccbc">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -383,7 +426,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-17 Tue 13:33</p>
+<p class="date">Created: 2023-10-18 Wed 12:18</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
