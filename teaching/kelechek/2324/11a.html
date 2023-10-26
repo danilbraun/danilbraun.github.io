@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-24 Tue 09:29 -->
+<!-- 2023-10-26 Thu 08:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>11А класс</title>
@@ -231,9 +231,9 @@
 <div id="content" class="content">
 <h1 class="title">11А класс</h1>
 
-<div id="outline-container-org110e08f" class="outline-2">
-<h2 id="org110e08f">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-org110e08f">
+<div id="outline-container-org058fea7" class="outline-2">
+<h2 id="org058fea7">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-org058fea7">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -243,13 +243,94 @@
 </div>
 </div>
 
-<div id="outline-container-org31c34a8" class="outline-2">
-<h2 id="org31c34a8">Занятия</h2>
-<div class="outline-text-2" id="text-org31c34a8">
+<div id="outline-container-org890d2d2" class="outline-2">
+<h2 id="org890d2d2">Занятия</h2>
+<div class="outline-text-2" id="text-org890d2d2">
 </div>
-<div id="outline-container-org984a701" class="outline-3">
-<h3 id="org984a701">24 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org984a701">
+<div id="outline-container-org77c624d" class="outline-3">
+<h3 id="org77c624d">26 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org77c624d">
+<p>
+<b>Задача 6.</b> Ларри разработал новый беспилотный автомобиль и собирается
+его испытать. Он будет работать из дома и анализировать действия
+автомобиля на прямой пустой дороге с безопасного расстояния.
+</p>
+
+<p>
+Из-за беспрецедентной проблемы единственная информация, которую Ларри
+может получить от автомобиля, &#x2014; это его положение в метрах от начала
+дороги. Хотя он получает обновленную информацию каждую минуту, ему
+хотелось бы знать, что делает автомобиль.
+</p>
+
+<p>
+Имея три различных положения <code>a</code>, <code>b</code> и <code>c</code>, расположенных на расстоянии
+одной минуты друг от друга, Ларри хотел бы знать, менял ли автомобиль
+направление движения, тормозил ли он, ускорялся или ехал с одной и той
+же скоростью. Можете ли вы помочь Ларри?
+</p>
+
+<p>
+Напишите функцию, которая принимает три числа \(0 \leqslant a, b, c \leqslant 1000\) и возвращает
+</p>
+
+<ul class="org-ul">
+<li>"повернул", если автомобиль менял направление движения;</li>
+<li>"ускорился", если он прошёл за вторую минуту расстоянее больше, чем
+за первую;</li>
+<li>"замедлился", если он прошёл за вторую минуту расстояние меньше, чем за первую;</li>
+<li>"движется", если он прошёл одно и то же расстояние и за первую, и за
+вторую минуты.</li>
+</ul>
+
+<p>
+Примеры:
+</p>
+
+<ul class="org-ul">
+<li><code>f(1, 2, 3) -&gt; "движется"</code></li>
+<li><code>f(5, 4, 1) -&gt; "ускорился"</code></li>
+<li><code>f(8, 9, 7) -&gt; "повернул"</code></li>
+<li><code>f(10, 20, 25) -&gt; "замедлился"</code></li>
+</ul>
+
+<p>
+\(\blacksquare\)
+</p>
+
+<p>
+<b>Задача 7.</b> Ваша школа предоставила вам ноутбук! Однако они настаивают
+на том, чтобы наклеить на Ваш новый компьютер наклейку со своим
+логотипом. Эта наклейка может быть очень большой, и ее нельзя
+повернуть! Поместится ли она с запасом в один сантиметр со всех
+сторон?
+</p>
+
+<p>
+Напишите функцию, которая принимает четыре числа \(1 \leqslant wc, hc,
+ws, hs \leqslant 1000\) (ширина и высота ноутбука, ширина и высота
+наклейки), и возвращает <code>"поместится"</code> или <code>"не поместится"</code>.
+</p>
+
+<p>
+Примеры:
+</p>
+
+<ul class="org-ul">
+<li><code>f(30, 30, 27, 27) -&gt; "поместится"</code></li>
+<li><code>f(35, 30, 25, 29) -&gt; "не поместится"</code></li>
+<li><code>f(30, 35, 30, 35) -&gt; "не поместится"</code></li>
+</ul>
+
+<p>
+\(\blacksquare\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc655d9" class="outline-3">
+<h3 id="orgfc655d9">24 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgfc655d9">
 <p>
 <b>Задача 4.</b> Напишите функцию, которая принимает два аргумента (месяц и
 день) и определяет, есть ли Хэллоуин в этот день или нет; если есть,
@@ -259,30 +340,30 @@ MAR, &#x2026;). \(\blacksquare\)
 </p>
 
 <p>
-<b>Задача 6.</b> Напишите функцию, которая принимает два числа &#x2014;
+<b>Задача 5.</b> Напишите функцию, которая принимает два числа &#x2014;
 координаты точки на плоскости &#x2014; и возвращает номер четверти, в
 которой она находится. Можете предполагать, что оба числа не равны
 нулю. \(\blacksquare\)
 </p>
 
 <p>
-<b>Задача 7.</b> TODO
+<b>Задача 6.</b> TODO
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd8bec03" class="outline-3">
-<h3 id="orgd8bec03">18 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgd8bec03">
+<div id="outline-container-org8827186" class="outline-3">
+<h3 id="org8827186">18 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org8827186">
 <p>
 Задачи <code>grade-v1</code>, <code>grade-v2</code>, <code>grade-v3</code>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb2f7b30" class="outline-3">
-<h3 id="orgb2f7b30">17 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgb2f7b30">
+<div id="outline-container-org5e29acf" class="outline-3">
+<h3 id="org5e29acf">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org5e29acf">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -326,27 +407,27 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 
 
-<div id="outline-container-orgbe61b10" class="outline-3">
-<h3 id="orgbe61b10">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgbe61b10">
+<div id="outline-container-org187c739" class="outline-3">
+<h3 id="org187c739">5 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org187c739">
 <p>
 <a href="./test01.1-11a.html">Тест #1.1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgeb06e6a" class="outline-3">
-<h3 id="orgeb06e6a">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgeb06e6a">
+<div id="outline-container-org019d17c" class="outline-3">
+<h3 id="org019d17c">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org019d17c">
 <p>
 <a href="./flags-11a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgba6b9ca" class="outline-3">
-<h3 id="orgba6b9ca">14 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgba6b9ca">
+<div id="outline-container-orgc6aff5e" class="outline-3">
+<h3 id="orgc6aff5e">14 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-orgc6aff5e">
 <p>
 <b>Задание 1.</b> Написать программу, которая рисует флаг
 </p>
@@ -393,9 +474,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-orgb653de7" class="outline-3">
-<h3 id="orgb653de7">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgb653de7">
+<div id="outline-container-orgafef058" class="outline-3">
+<h3 id="orgafef058">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-orgafef058">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -407,9 +488,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org614f073" class="outline-3">
-<h3 id="org614f073">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org614f073">
+<div id="outline-container-org0c620c4" class="outline-3">
+<h3 id="org0c620c4">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org0c620c4">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -422,7 +503,7 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-24 Tue 09:29</p>
+<p class="date">Created: 2023-10-26 Thu 08:49</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
