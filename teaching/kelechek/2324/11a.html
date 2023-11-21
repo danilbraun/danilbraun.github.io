@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-10-31 Tue 09:15 -->
+<!-- 2023-11-21 Tue 09:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>11А класс</title>
@@ -231,9 +231,9 @@
 <div id="content" class="content">
 <h1 class="title">11А класс</h1>
 
-<div id="outline-container-orgfa027da" class="outline-2">
-<h2 id="orgfa027da">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-orgfa027da">
+<div id="outline-container-org3de3bda" class="outline-2">
+<h2 id="org3de3bda">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-org3de3bda">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -243,13 +243,76 @@
 </div>
 </div>
 
-<div id="outline-container-org185a070" class="outline-2">
-<h2 id="org185a070">Занятия</h2>
-<div class="outline-text-2" id="text-org185a070">
+<div id="outline-container-orgdc8755d" class="outline-2">
+<h2 id="orgdc8755d">Занятия</h2>
+<div class="outline-text-2" id="text-orgdc8755d">
 </div>
-<div id="outline-container-org4686eed" class="outline-3">
-<h3 id="org4686eed">31 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org4686eed">
+<div id="outline-container-orgb965a13" class="outline-3">
+<h3 id="orgb965a13">21 ноября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgb965a13">
+<p>
+<b>Залача 9.</b> Джейк учится играть в карточную игру "Доминион". В "Доминионе" можно покупать различные карты сокровищ, действий и победных очков - в конце игры побеждает игрок, набравший наибольшее количество победных очков!
+</p>
+
+<p>
+Каждый ход каждый игрок вытягивает 5 карт и может использовать свои карты действий и сокровищ для получения единиц покупательской способности, чтобы купить больше карт. Поскольку Джейк только начинает игру, он решил покупать только карты сокровищ и победных очков.
+</p>
+
+<p>
+В игре Доминион существует 3 вида карт побед:
+</p>
+
+<ul class="org-ul">
+<li>Провинция (стоит 8, даёт  6 очков победы)</li>
+<li>Герцогство (стоит 5, даёт 3 очка победы)</li>
+<li>Поместье (стоит 2, даёт 1 очко победы)</li>
+</ul>
+
+<p>
+Кроме того, есть 3 вида карт сокровищ:
+</p>
+
+<ul class="org-ul">
+<li>Золото (стоит 6, даёт 3 единицы покупательской способности)</li>
+<li>Серебро (стоит 3, даёт 2 единицы покупательской способности)</li>
+<li>Медь (стоит 0, даёт 1 единицу покупательной способности)</li>
+</ul>
+
+<p>
+В начале хода Джейка он вытягивает 5 таких карт. Учитывая количество золотых, серебряных и медных карт в руке Джейка, рассчитайте лучшую карту победы и лучшую карту сокровищ, которые он может купить в этот ход. Обратите внимание, что Джейк может купить только одну карту.
+</p>
+
+<p>
+Нужно написать функцию, которая принимает три неотрицательных числа \(G, S, C (G + S + C \leqslant 5\) — сколько у игрока карт золота, серебра и меди (именно в таком порядке). Функция должна вернуть лучшую карту победы (провинция, герцогство или поместье) и лучшую карту сокровищ (золото, серебро или медь), которые Джейк может купить в этот ход, соединив их строкой  <code>" or "</code>. Если Джейк не может позволить себе ни одной карты победы, выведите только лучшую карту сокровищ, которую он может купить.
+</p>
+
+<p>
+(В примере 1 у Джейка 1 единица серебра, что даёт ему 2 единицы покупательской способности, что позволит ему купить поместье или медь.)
+</p>
+
+<p>
+Примеры:
+</p>
+
+<pre class="example">
+f(0, 1, 0) is “Estate or Copper”
+f(2, 1, 0) is “Province or Gold”
+f(0, 0, 1) is “Copper”
+</pre>
+
+<p>
+\(\blacksquare\)
+</p>
+
+<p>
+<b>Задача 10.</b> TODO
+</p>
+</div>
+</div>
+
+<div id="outline-container-org79d2c29" class="outline-3">
+<h3 id="org79d2c29">31 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org79d2c29">
 <p>
 <b>Задача 8.</b> Компания-стартап пытается разработать программное
 обеспечение для самоуправляемых автомобилей. Одной из неожиданно
@@ -299,9 +362,9 @@ f("South", "North", "North") is "No"
 </div>
 </div>
 
-<div id="outline-container-org1fea425" class="outline-3">
-<h3 id="org1fea425">26 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org1fea425">
+<div id="outline-container-org5a6e368" class="outline-3">
+<h3 id="org5a6e368">26 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org5a6e368">
 <p>
 <b>Задача 6.</b> Ларри разработал новый беспилотный автомобиль и собирается
 его испытать. Он будет работать из дома и анализировать действия
@@ -380,9 +443,9 @@ ws, hs \leqslant 1000\) (ширина и высота ноутбука, шири
 </div>
 </div>
 
-<div id="outline-container-org19bd6fc" class="outline-3">
-<h3 id="org19bd6fc">24 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org19bd6fc">
+<div id="outline-container-org5e64213" class="outline-3">
+<h3 id="org5e64213">24 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org5e64213">
 <p>
 <b>Задача 4.</b> Напишите функцию, которая принимает два аргумента (месяц и
 день) и определяет, есть ли Хэллоуин в этот день или нет; если есть,
@@ -404,18 +467,18 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-orgc527642" class="outline-3">
-<h3 id="orgc527642">18 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgc527642">
+<div id="outline-container-org8e6060f" class="outline-3">
+<h3 id="org8e6060f">18 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org8e6060f">
 <p>
 Задачи <code>grade-v1</code>, <code>grade-v2</code>, <code>grade-v3</code>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd81ee17" class="outline-3">
-<h3 id="orgd81ee17">17 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgd81ee17">
+<div id="outline-container-org1ad31d0" class="outline-3">
+<h3 id="org1ad31d0">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org1ad31d0">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -459,27 +522,27 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 
 
-<div id="outline-container-orgb37f430" class="outline-3">
-<h3 id="orgb37f430">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgb37f430">
+<div id="outline-container-org25e1f67" class="outline-3">
+<h3 id="org25e1f67">5 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org25e1f67">
 <p>
 <a href="./test01.1-11a.html">Тест #1.1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd525890" class="outline-3">
-<h3 id="orgd525890">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-orgd525890">
+<div id="outline-container-org1a986ce" class="outline-3">
+<h3 id="org1a986ce">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org1a986ce">
 <p>
 <a href="./flags-11a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org84060a7" class="outline-3">
-<h3 id="org84060a7">14 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org84060a7">
+<div id="outline-container-orgc58332d" class="outline-3">
+<h3 id="orgc58332d">14 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-orgc58332d">
 <p>
 <b>Задание 1.</b> Написать программу, которая рисует флаг
 </p>
@@ -526,9 +589,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org1b842ee" class="outline-3">
-<h3 id="org1b842ee">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org1b842ee">
+<div id="outline-container-org8397890" class="outline-3">
+<h3 id="org8397890">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org8397890">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -540,9 +603,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org15e692a" class="outline-3">
-<h3 id="org15e692a">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org15e692a">
+<div id="outline-container-org9bb5099" class="outline-3">
+<h3 id="org9bb5099">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org9bb5099">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -555,7 +618,7 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-10-31 Tue 09:15</p>
+<p class="date">Created: 2023-11-21 Tue 09:27</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
