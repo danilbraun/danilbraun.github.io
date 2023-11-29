@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-11-15 Wed 13:12 -->
+<!-- 2023-11-29 Wed 13:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>9А класс</title>
@@ -231,9 +231,9 @@
 <div id="content" class="content">
 <h1 class="title">9А класс</h1>
 
-<div id="outline-container-org027d312" class="outline-2">
-<h2 id="org027d312">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-org027d312">
+<div id="outline-container-orgc348d69" class="outline-2">
+<h2 id="orgc348d69">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-orgc348d69">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -243,13 +243,63 @@
 </div>
 </div>
 
-<div id="outline-container-org910d9d9" class="outline-2">
-<h2 id="org910d9d9">Занятия</h2>
-<div class="outline-text-2" id="text-org910d9d9">
+<div id="outline-container-org5778244" class="outline-2">
+<h2 id="org5778244">Занятия</h2>
+<div class="outline-text-2" id="text-org5778244">
 </div>
-<div id="outline-container-orgd8a29b5" class="outline-3">
-<h3 id="orgd8a29b5">15 ноября 2023, среда</h3>
-<div class="outline-text-3" id="text-orgd8a29b5">
+<div id="outline-container-orgee1e251" class="outline-3">
+<h3 id="orgee1e251">29 ноября 2023, среда</h3>
+<div class="outline-text-3" id="text-orgee1e251">
+<p>
+<b>Задача 11.</b> Функция принимает четыре числа &#x2014; \(1 \leqslant c1, r1,
+c2, r2 \leqslant 8\) &#x2014; номер столбца и строки клетки на шахматной
+доске, сначала для первой клетки, затем для второй. Функция должна
+вернуть <code>true</code>, если клетки одного цвета, и <code>false</code> в противном
+случае.
+</p>
+
+<pre class="example">
+fun checkerboard(c1, r1, c2, r2):
+  ...
+where:
+  checkerboard(1, 1, 2, 6) is true
+  checkerboard(2, 2, 2, 5) is false
+end
+</pre>
+
+<p>
+\(\blacksquare\)
+</p>
+
+<p>
+<b>Задача 12.</b> Плитка шоколада представляет собой прямоугольник со
+сторонами \(a\) и \(b\), состоящим из \(a \times b\) кусочков. Такую
+плитку можно разломить один раз на две части так, чтобы все кусочки
+остались целыми (т.е. разлом будет сделан по прямой линии между
+кусочками).Вам следует определить, можно ли сделать такой разлом,
+чтобы в одной из двух частей получилось ровно \(k\) кусочков.
+</p>
+
+<pre class="example">
+fun choco-split(a, b, k):
+  …
+where: 
+  choco-split(4, 2, 6) is true
+  choco-split(2, 10, 7) is false
+  choco-split(5, 7, 2) is false
+  choco-split(7, 4, 21) is true
+end
+</pre>
+
+<p>
+\(\blacksquare\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org160f537" class="outline-3">
+<h3 id="org160f537">15 ноября 2023, среда</h3>
+<div class="outline-text-3" id="text-org160f537">
 <p>
 <b>Задача 9.</b> Напишите функцию, которая принимает число &#x2014; год &#x2014; и
 возвращает <code>true</code>, если этот год високосный, и <code>false</code> в противном
@@ -307,9 +357,9 @@
 </div>
 
 
-<div id="outline-container-org3cabc9c" class="outline-3">
-<h3 id="org3cabc9c">1 ноября 2023, среда</h3>
-<div class="outline-text-3" id="text-org3cabc9c">
+<div id="outline-container-org57f947f" class="outline-3">
+<h3 id="org57f947f">1 ноября 2023, среда</h3>
+<div class="outline-text-3" id="text-org57f947f">
 <p>
 Нкжно решить минимум две задачи (написать функции или выражения) из
 задач 4&#x2013;8. На тройку: 4, 6; на четвёрку: 5, 7; на пятёрку: 8.
@@ -357,9 +407,9 @@ ws, hs \leqslant 1000\) (ширина и высота ноутбука, шири
 </div>
 </div>
 
-<div id="outline-container-org131f55a" class="outline-3">
-<h3 id="org131f55a">26 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org131f55a">
+<div id="outline-container-org9e6911d" class="outline-3">
+<h3 id="org9e6911d">26 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org9e6911d">
 <p>
 <b>Задача 4.</b> Напишите функцию, которая принимает два аргумента (месяц и
 день) и определяет, есть ли Хэллоуин в этот день или нет; если есть,
@@ -377,9 +427,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org5afb435" class="outline-3">
-<h3 id="org5afb435">18 октября 2023, среда</h3>
-<div class="outline-text-3" id="text-org5afb435">
+<div id="outline-container-org7132609" class="outline-3">
+<h3 id="org7132609">18 октября 2023, среда</h3>
+<div class="outline-text-3" id="text-org7132609">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -434,36 +484,36 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org5dcf819" class="outline-3">
-<h3 id="org5dcf819">11 октября 2023, среда</h3>
-<div class="outline-text-3" id="text-org5dcf819">
+<div id="outline-container-orgfae7b3f" class="outline-3">
+<h3 id="orgfae7b3f">11 октября 2023, среда</h3>
+<div class="outline-text-3" id="text-orgfae7b3f">
 <p>
 <a href="./test01.2-9a.html">Тест #1.2</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org90dd17f" class="outline-3">
-<h3 id="org90dd17f">4 октября 2023, среда</h3>
-<div class="outline-text-3" id="text-org90dd17f">
+<div id="outline-container-org444cd71" class="outline-3">
+<h3 id="org444cd71">4 октября 2023, среда</h3>
+<div class="outline-text-3" id="text-org444cd71">
 <p>
 <a href="./test01-9a.html">Тест #1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge2a708f" class="outline-3">
-<h3 id="orge2a708f">20 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-orge2a708f">
+<div id="outline-container-orgfaf40c0" class="outline-3">
+<h3 id="orgfaf40c0">20 сентября 2023, среда</h3>
+<div class="outline-text-3" id="text-orgfaf40c0">
 <p>
 <a href="./flags-9a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb7779d3" class="outline-3">
-<h3 id="orgb7779d3">13 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-orgb7779d3">
+<div id="outline-container-orgceb78cd" class="outline-3">
+<h3 id="orgceb78cd">13 сентября 2023, среда</h3>
+<div class="outline-text-3" id="text-orgceb78cd">
 <p>
 <b>Задание 1.</b> Написать программу, которая рисует флаг
 </p>
@@ -511,9 +561,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 
 
-<div id="outline-container-org3564ad6" class="outline-3">
-<h3 id="org3564ad6">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org3564ad6">
+<div id="outline-container-org0d6e361" class="outline-3">
+<h3 id="org0d6e361">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org0d6e361">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -525,9 +575,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-orgba59405" class="outline-3">
-<h3 id="orgba59405">6 сентября 2023, среда</h3>
-<div class="outline-text-3" id="text-orgba59405">
+<div id="outline-container-org2f03de9" class="outline-3">
+<h3 id="org2f03de9">6 сентября 2023, среда</h3>
+<div class="outline-text-3" id="text-org2f03de9">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -539,7 +589,7 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-11-15 Wed 13:12</p>
+<p class="date">Created: 2023-11-29 Wed 13:07</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
