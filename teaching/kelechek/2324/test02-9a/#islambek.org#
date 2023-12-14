@@ -1,0 +1,47 @@
+#+html_head: <link rel="stylesheet" type="text/css" href="/style.css" />
+#+language: ru
+#+options: toc:nil num:nil
+
+#+title: Тест #2, Ж. Исламбек
+
+1. Приведите пример условного выражения.
+2. Что такое логическое выражение?
+3. 3. (4 балла) Для каждого из следующих выражений напишите результат его вычисления.
+  - (а)
+  #+begin_src
+  100 <> 200
+  #+end_src
+  - (б) 
+  #+begin_src
+  a = 700
+  (a > 100) and (a < 700)
+  #+end_src
+  - (в) 
+  #+begin_src
+  name = "John"
+  grade = 10
+  if grade >= 9:
+    if name <> "Jack":
+      1
+    else:
+      2
+    end
+  else:
+    if name == "John":
+      3
+    else:
+      4
+    end
+  end
+  #+end_src 
+4. (5 баллов) Школьник пытался написать программу для решения задачи
+   про четверти плоскости, но допустил несколько ошибок. Найдите все ошибки и
+   опишите каждую из них --- в чём состоит ошибка, и что нужно
+   изменить в коде, чтобы её исправить. Переписывать целиком весь код
+   не нужно.
+
+  #+begin_src
+  fun is-halloween(month, day)
+    if month = OCT and day = 31: "yep"
+    else: "nope"
+  #+end_src
