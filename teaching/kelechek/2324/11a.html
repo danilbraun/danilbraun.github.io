@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-<!-- 2023-12-26 Tue 08:44 -->
+<!-- 2024-01-18 Thu 13:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>11А класс</title>
@@ -231,9 +231,9 @@
 <div id="content" class="content">
 <h1 class="title">11А класс</h1>
 
-<div id="outline-container-org523020d" class="outline-2">
-<h2 id="org523020d">Полезные ссылки</h2>
-<div class="outline-text-2" id="text-org523020d">
+<div id="outline-container-org80f54e7" class="outline-2">
+<h2 id="org80f54e7">Полезные ссылки</h2>
+<div class="outline-text-2" id="text-org80f54e7">
 <ul class="org-ul">
 <li>Среда разработки: <a href="https://code.pyret.org">code.pyret.org</a></li>
 <li>Учебник (на английском): <a href="https://dcic-world.org/">Data-Centric Introduction to Computing</a></li>
@@ -243,22 +243,86 @@
 </div>
 </div>
 
-<div id="outline-container-org4ec158e" class="outline-2">
-<h2 id="org4ec158e">Занятия</h2>
-<div class="outline-text-2" id="text-org4ec158e">
+<div id="outline-container-orgf0bffda" class="outline-2">
+<h2 id="orgf0bffda">Занятия</h2>
+<div class="outline-text-2" id="text-orgf0bffda">
 </div>
-<div id="outline-container-org114400e" class="outline-3">
-<h3 id="org114400e">26 декабря 2023, вторник</h3>
-<div class="outline-text-3" id="text-org114400e">
+<div id="outline-container-org94c7c18" class="outline-3">
+<h3 id="org94c7c18">17 января 2024, среда</h3>
+<div class="outline-text-3" id="text-org94c7c18">
+<p>
+Скопируйте и вставьте в начало следующий код:
+</p>
+
+<pre class="example">
+provide *
+provide-types * 
+include shared-gdrive("dcic-2021", "1wyQZj_L0qqV9Ekgr9au6RX2iqt2Ga8Ep")
+include tables
+
+FACULTY-DIR = table: name :: String, department :: String, office :: String, phone :: String
+  row: "Strong", "East Asian Studies", "Kassar 180", "282-280-2481"
+  row: "Pugh", "Econ", "Gerard 21", "581-280-2510"
+  row: "Humphrey", "Physics", "Metcalf 300", "231-121-1129"
+  row: "Coleman", "Physics", "B&amp;H 387", "974-093-5128"
+  row: "Kaufman", "Music", " ", "502-120-5781"
+  row: "Pratt", "Anthro", "CIT 672", "281-6723-5677"
+  row: "Cherry", "CS", "CIT 007", "459-005-2098"
+  row: "Sosa", "History", "", "878-784-5612"
+  row: "Price", "Music", "Kassar 4", "102-503-6002"
+  row: "Hopkins", "English", "      ", "742-024-8762"
+  row: "Everett", "Physics", "Metcalf 039", "975-202-3333"
+  row: "Keller", "French", "Watson 91", "871-458-0235"
+  row: "Day", "French", "   ", "441-459-8722"
+  row: "Stark", "Anthro", "Maxcy 19", "240-120-7852"
+  row: "Branch", "CS", "Robinson 230", "583-0971-2011"
+  row: "Brandt", "Bio", "Watson 210", "401-412-9065"
+  row: "Moody", "Sociology", "Gerard 721", "206-425-3109"
+  row: "Chung", "APMA", "Metcalf 001", "102-030-4050"
+end
+</pre>
+
+<ol class="org-ol">
+<li>Напишите функцию <code>in-CIT</code>, которая принимает строку (офис, например
+<code>"CIT 429"</code> or <code>"Metcalf 322"</code>) и возвращает булево значение,
+которое определяет, находится ли офис в CIT, то есть начинается ли
+строка с <code>”CIT “</code>.</li>
+<li>Напишите функцию <code>in-building</code>, которая принимает строку (офис) и
+ещё одну строку (здание) и возвращает булево значение,
+определяющее, находится ли офис в данном здании, то есть начинается
+ли строка офиса с названия здания, после которого идёт пробел.</li>
+<li>Напишите функцию <code>get-room-number</code>, которая принимает строку (офис)
+и возвращает строку, содержащую только номер офиса. Например,
+<code>get-room-number("CIT 429")</code> должна вернуть <code>"429"</code>.  Номер офиса
+это та часть строки, которая идёт после первого пробела. Если в
+строке нет пробела, то функция должна вызывать ошибку
+<code>raise("Error: string has no spaces")</code>.</li>
+<li>Напишите выражение для построения таблицы из <code>FACULTY-DIR</code> с теми,
+у кого офисы в CIT. Результат этого вычисления сохраните под именем
+<code>rows-in-CIT</code>, то есть у Вас должно быть написано что-то вроде
+<code>rows-in-CIT = [какое-то выражение для вычисления таблицы</code> в Вашем
+коде.</li>
+<li>Для некоторых сотрудников не указан их офис. В таких случаях в
+столбце офиса пишется строка из 0 или более пробелов, то есть <code>””</code>
+или <code>” “</code> и т.д. Напишите выражение для вычисления таблицы со всеми
+сотрудниками из <code>FACULTY-DIR</code>, у которых не указан офис.  Результат
+сохраните под именем <code>no-office-fac</code>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org65f7c44" class="outline-3">
+<h3 id="org65f7c44">26 декабря 2023, вторник</h3>
+<div class="outline-text-3" id="text-org65f7c44">
 <p>
 <a href="./test02-11a">Тест #2</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org609c40b" class="outline-3">
-<h3 id="org609c40b">30 ноября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org609c40b">
+<div id="outline-container-org37f8b0d" class="outline-3">
+<h3 id="org37f8b0d">30 ноября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org37f8b0d">
 <p>
 <b>Задача 10.</b> Функция принимает четыре числа &#x2014; \(1 \leqslant c1, r1,
 c2, r2 \leqslant 8\) &#x2014; номер столбца и строки клетки на шахматной
@@ -306,18 +370,18 @@ end
 </div>
 </div>
 
-<div id="outline-container-orgd095e51" class="outline-3">
-<h3 id="orgd095e51">23 ноября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orgd095e51">
+<div id="outline-container-orgc26bb9f" class="outline-3">
+<h3 id="orgc26bb9f">23 ноября 2023, четверг</h3>
+<div class="outline-text-3" id="text-orgc26bb9f">
 <p>
 Разбор задач. Не закончили.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org642bae8" class="outline-3">
-<h3 id="org642bae8">21 ноября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org642bae8">
+<div id="outline-container-orga1f1008" class="outline-3">
+<h3 id="orga1f1008">21 ноября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orga1f1008">
 <p>
 <b>Залача 9.</b> Джейк учится играть в карточную игру "Доминион". В "Доминионе" можно покупать различные карты сокровищ, действий и победных очков - в конце игры побеждает игрок, набравший наибольшее количество победных очков!
 </p>
@@ -375,9 +439,9 @@ f(0, 0, 1) is “Copper”
 </div>
 
 
-<div id="outline-container-org7901978" class="outline-3">
-<h3 id="org7901978">31 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org7901978">
+<div id="outline-container-org6f949ca" class="outline-3">
+<h3 id="org6f949ca">31 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org6f949ca">
 <p>
 <b>Задача 8.</b> Компания-стартап пытается разработать программное
 обеспечение для самоуправляемых автомобилей. Одной из неожиданно
@@ -427,9 +491,9 @@ f("South", "North", "North") is "No"
 </div>
 </div>
 
-<div id="outline-container-org2b5e615" class="outline-3">
-<h3 id="org2b5e615">26 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org2b5e615">
+<div id="outline-container-org0a71080" class="outline-3">
+<h3 id="org0a71080">26 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org0a71080">
 <p>
 <b>Задача 6.</b> Ларри разработал новый беспилотный автомобиль и собирается
 его испытать. Он будет работать из дома и анализировать действия
@@ -508,9 +572,9 @@ ws, hs \leqslant 1000\) (ширина и высота ноутбука, шири
 </div>
 </div>
 
-<div id="outline-container-org24e05a5" class="outline-3">
-<h3 id="org24e05a5">24 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org24e05a5">
+<div id="outline-container-org0f897e5" class="outline-3">
+<h3 id="org0f897e5">24 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org0f897e5">
 <p>
 <b>Задача 4.</b> Напишите функцию, которая принимает два аргумента (месяц и
 день) и определяет, есть ли Хэллоуин в этот день или нет; если есть,
@@ -532,18 +596,18 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-orge2233b5" class="outline-3">
-<h3 id="orge2233b5">18 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-orge2233b5">
+<div id="outline-container-orga2aab2c" class="outline-3">
+<h3 id="orga2aab2c">18 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-orga2aab2c">
 <p>
 Задачи <code>grade-v1</code>, <code>grade-v2</code>, <code>grade-v3</code>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org726bf43" class="outline-3">
-<h3 id="org726bf43">17 октября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org726bf43">
+<div id="outline-container-org25997a2" class="outline-3">
+<h3 id="org25997a2">17 октября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org25997a2">
 <p>
 <b>Задача 1.</b> Определить функцию <code>grade-v1</code>, которая
 принимает 6 чисел (баллы за 6 заданий теста) и
@@ -587,27 +651,27 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 
 
-<div id="outline-container-org4dabae1" class="outline-3">
-<h3 id="org4dabae1">5 октября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org4dabae1">
+<div id="outline-container-org7e0c1d5" class="outline-3">
+<h3 id="org7e0c1d5">5 октября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org7e0c1d5">
 <p>
 <a href="./test01.1-11a.html">Тест #1.1</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5fec2a0" class="outline-3">
-<h3 id="org5fec2a0">19 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org5fec2a0">
+<div id="outline-container-orgca51965" class="outline-3">
+<h3 id="orgca51965">19 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-orgca51965">
 <p>
 <a href="./flags-11a.html">Флаги</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7d0ad00" class="outline-3">
-<h3 id="org7d0ad00">14 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org7d0ad00">
+<div id="outline-container-org08253cb" class="outline-3">
+<h3 id="org08253cb">14 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org08253cb">
 <p>
 <b>Задание 1.</b> Написать программу, которая рисует флаг
 </p>
@@ -654,9 +718,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org562e960" class="outline-3">
-<h3 id="org562e960">7 сентября 2023, четверг</h3>
-<div class="outline-text-3" id="text-org562e960">
+<div id="outline-container-org3daa42f" class="outline-3">
+<h3 id="org3daa42f">7 сентября 2023, четверг</h3>
+<div class="outline-text-3" id="text-org3daa42f">
 <ul class="org-ul">
 <li>Документация по языку Pyret: <a href="https://pyret.org/docs">pyret.org/docs</a>
 <ul class="org-ul">
@@ -668,9 +732,9 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 </div>
 
-<div id="outline-container-org951a5cf" class="outline-3">
-<h3 id="org951a5cf">5 сентября 2023, вторник</h3>
-<div class="outline-text-3" id="text-org951a5cf">
+<div id="outline-container-org23d8c99" class="outline-3">
+<h3 id="org23d8c99">5 сентября 2023, вторник</h3>
+<div class="outline-text-3" id="text-org23d8c99">
 <ul class="org-ul">
 <li>Data-Centric Introduction to Computing: <a href="https://dcic-world.org/">dcic-world.org</a></li>
 <li>Введение в программирование и структуры данных: поискать в Архиве Анны</li>
@@ -683,7 +747,7 @@ MAR, &#x2026;). \(\blacksquare\)
 </div>
 <div id="postamble" class="status">
 <p class="author">&#1040;&#1074;&#1090;&#1086;&#1088;: Danil Braun</p>
-<p class="date">Created: 2023-12-26 Tue 08:44</p>
+<p class="date">Created: 2024-01-18 Thu 13:38</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
